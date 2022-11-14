@@ -75,6 +75,32 @@ Ne postoji kontrakcija dužine& Postoji kontrakcija dužine\\ \hline
 \end{center}
 \end{table}
 
+\section{Neuronske mreže}
+\label{sec:naslov1}
+
+Neuronske mreže (eng. {\textit{neural networks}}) predstavljaju najpopularniju i jednu od najprimenjenijih metoda mašinskog učenja. Njihove primene su mnogobrojne i pomeraju domete veštačke inteligencije, računarstva i primenjene matematike. Neke od njih su:
+\begin{itemize}
+  \item kategorijzacija teksta
+  \item medicinska dijagnostika
+  \item prepoznavanje objekata na slikama
+  \item autonomna vožnja
+  \item igranje igara poput igara na tabli (tavla i go) ili video igara
+  \item mašinsko prevođenje prirodnih jezika
+  \item modelovanje semantike reči prirodnog jezika i slično
+\end{itemize}
+Neuronske mreže zapravo predstavljaju parametrizovanu reprezentaciju koja može poslužiti za aproksimaciju drugih funkcija. Kao i u slučaju drugih metoda učenja, pronalaženje odgovarajućih parametara se vrši matematičkom optimizacijom nekog kriterijuma kvaliteta aproksimacije i može biti računski vrlo izazovno.
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=1]{fullyconnected.jpg}
+\end{center}
+\caption{Struktura potpuno povezane neuronske mreže.}
+\label{fig:fullyconnected}
+\end{figure}
+
+Postoje različite vrste neuronskih mreža. Osnovnu varijantu predstavljaju potpuno povezane neuronske mreže (eng. {\textit{fully connected}}), koju možemo videti na slici \ref{fig:fullyconnected}. U obradi slika i drugih vrsta signala, pa i teksta, vrlo su popularne konvolutivne neuronske mreže (eng. {\textit{convolutional neural networks}}). Za obradu podataka nalik nizovima promenljive dužine, najčešće se koriste rekurentne neuronske mreže (eng. {\textit{recurrent nerual networks}}), a za obradu podataka koji se predstavljaju grafovima koriste se grafovske neuronske mreže (eng. {\textit{graph neural networks}}).
+
+U svetlu njihovih izvanrednih uspeha i velike popularnosti, u laičkim krugovima postoji tendencija poistovećivanja mašinskog učenja, pa čak i veštačke inteligencije sa neuronskim mrežama. Ovakav pogled je prosto pogrešan. Takođe, postoji tendencija da se neuronska mreža razmatra kao prvi izbor metoda učenja nevezano od toga o kom se problemu radi. Ovo bi bio vrlo loš praktičan savet. Stoga naglašavamo u kakvim situacijama su superiorne u odnosu na druge modele. Dok je sasvim moguće da će neuronske mreže prestići druge modele i u drugačijim problemima, problemi zahvaljujući kojima su se neuronske mreže proslavile imaju određena zajednička svojstva. To su velika količina podataka i učenje na osnovu sirove reprezentacije podataka. Male količine podataka u slučaju neuronskih mreža lako vode preprilagođavanju neuronskih mreža, odnosno sposobnosti da same konstruišu nove atribute nad sirovom reprezentacijom podataka. Neuronske mreže su karakteristične po tome što su u stanju to da rade. Stoga, ukoliko je skup podataka mali nema razloga da očekujemo posebni benefit od primene neuronskih mreža, a moguće je da ćemo imati problema sa njihovim nedostacima. Ukoliko je veliki i u sirovom obliku, verovatno je dobra ideja primeniti neku varijaciju neuronske mreže.
 
 \printbibliography[
 heading=bibintoc,
